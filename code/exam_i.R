@@ -62,7 +62,7 @@ q9df <- mtcars_with_ptw %>%
 # Assign to: `mtcars_mpg_by_gear`
 mtcars_mpg_by_gear <- mtcars %>% 
                             group_by(gear) %>% 
-                                          summarise(min = min(mpg), max = max(mpg))
+                                          summarise(min_mpg = min(mpg), max_mpg = max(mpg))
 # ggplot ------------------------------------------------------------------
 
 # Visualization in R (using `iris` dataset)
@@ -77,7 +77,7 @@ colnames(iris) # output from this code is the column names that can be used in f
    ggplot(
     aes(x = Sepal.Length, 
         y = Sepal.Width)
-  ) + geom_point(color = "green")
+  ) + geom_point()
 # 12. Scatter plot with points colored by `Species`
 # Assign to: `g_scat_col`
 # Create a scatter plot with `Petal.Width` on the x-axis and `Petal.Length` on the y-axis,
