@@ -47,7 +47,7 @@ mtcars_no_drat <- df_mtcars %>%
 # Use `mutate()` to add the new column.
 # Assign to: `mtcars_with_ptw`
 mtcars_with_ptw <- df_mtcars %>% 
-                            mutate("ptw" = hp / wt)
+                            mutate(ptw = hp / wt)
 # 9. Identify the car `model` with the highest `ptw` among cars with six cylinders (`cyl == 6`).
 # Hint: Use `mtcars_with_ptw` and a chain of `filter()` and `arrange()` with `%>%`.
 # Write the car model here: Ferrari Dino
