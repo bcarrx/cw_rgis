@@ -10,7 +10,7 @@ rm(list = ls())
 
 ## how to read vector data
 sf_nc_county <- st_read(dsn = "data/nc.shp",
-        quiet = TRUE)
+                        quiet = TRUE)
 ## how to export shape files
 st_write(sf_nc_county,
          dsn = "data/sf_nc_county.shp",
@@ -56,7 +56,7 @@ sf_nc_guil <- sf_nc_county %>%
   filter(county == "guilford")
 
 mapview(sf_nc_guil,
-         col.region = "gold",
+        col.region = "gold",
         legend = FALSE)
 
 # static map in ggplot format ---------------------------------------------
